@@ -1,8 +1,5 @@
 module Types where
 
-import Data.List (sort, group, sortBy)
-import Data.Ord (Down(..))
-
 -- This file defines all the important types that are going to be used in the game
 
 -- Card suits
@@ -44,7 +41,7 @@ data HandResult = HandResult
   }
   deriving (Eq, Show)
 
--- | Current state of the game
+-- Current state of the game
 data GameState = GameState
   { deck         :: [Card]
   , currentHand  :: [Card]

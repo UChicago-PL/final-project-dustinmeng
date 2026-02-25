@@ -1,0 +1,19 @@
+cabal-version: 2.4
+name:          balatro
+version:       0.1.0.0
+synopsis:      A Balatro-inspired poker scoring game in Haskell
+author:        Dustin Meng
+build-type:    Simple
+
+executable balatro
+  main-is:       Main.hs
+  hs-source-dirs: app, src
+  other-modules:
+    Types
+    HandEval
+    ScoreCalc
+  build-depends:
+    base   >= 4.14 && < 5,
+    random >= 1.2  && < 1.3
+  default-language: Haskell2010
+  ghc-options: -Wall

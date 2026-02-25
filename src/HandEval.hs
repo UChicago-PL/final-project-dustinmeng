@@ -41,8 +41,6 @@ eval cards
       let scoringRanks = [head g | g <- grouped, length g == n]
       in filter (\c -> rank c `elem` scoringRanks) cards
 
-    
-
     -- Highest card
     highestCard = maximumBy (\a b -> compare (rank a) (rank b)) cards
 
