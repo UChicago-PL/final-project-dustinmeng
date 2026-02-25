@@ -3,6 +3,8 @@ module Types where
 import Data.List (sort, group, sortBy)
 import Data.Ord (Down(..))
 
+-- This file defines all the important types that are going to be used in the game
+
 -- Card suits
 data Suit = Clubs | Diamonds | Hearts | Spades
   deriving (Eq, Ord, Enum, Bounded, Show, Read)
